@@ -18,13 +18,6 @@ const SocialButton = () => {
 	return (
 		<div className={style.btnBlock}>
 			<AwesomeButton
-				type='github'
-				size='medium'
-				href='https://github.com/IsaevEgor'
-			>
-				<span className={style.textBtn}><AiFillGithub/><p>GitHub</p></span>
-			</AwesomeButton>
-			<AwesomeButton
 				type='messenger'
 				size='medium'
 				href='https://vk.com/id68402157'
@@ -37,6 +30,13 @@ const SocialButton = () => {
 				href='https://t.me/Egor_i_saev'
 			>
 				<span className={style.textBtn}><FaTelegramPlane/><p>Telegram</p></span>
+			</AwesomeButton>
+			<AwesomeButton
+				type='github'
+				size='medium'
+				href='https://github.com/IsaevEgor'
+			>
+				<span className={style.textBtn}><AiFillGithub/><p>GitHub</p></span>
 			</AwesomeButton>
 		</div>
 	);
