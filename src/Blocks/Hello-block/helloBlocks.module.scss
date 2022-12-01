@@ -1,0 +1,19 @@
+.div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.typedBlock{
+	text-align: center;
+	font-family: 'Inter';
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%;
+	color: rgb(211, 211, 211);
+}

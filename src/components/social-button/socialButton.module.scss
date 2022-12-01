@@ -1,0 +1,21 @@
+.btnBlock{
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+	width: 500px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.textBtn{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: "Inter";
+	font-size: 18px;
+	
+	p{
+		margin-left: 5px;
+	}
+}
