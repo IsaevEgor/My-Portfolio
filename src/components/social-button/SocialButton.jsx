@@ -12,7 +12,7 @@ import "react-awesome-button/dist/styles.css";
 import 'react-awesome-button/src/styles/themes/theme-rickiest';
 
 // для изменения дефолтных стилей кнопки (идет последним)
-import "./githubBtn.css";
+import "./styleBtn.css";
 const SocialButton = () => {
 
 	return (

@@ -5,6 +5,10 @@ import { CSSTransition } from 'react-transition-group';
 import "./animationMenu.scss";
 import { useDispatch, useSelector } from 'react-redux';
 import { animationStart, animationStop } from '../../store/mainReducer';
+// Рабочая комбинация импортов, с подбором разных тем
+//(не сбрасывает стили при перезагрузке страници)
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
   
 const Menu = ({onClick, slideIndex}:any) => {
 	const [isOpen, setisOpen] = useState(false)
@@ -43,40 +47,56 @@ const Menu = ({onClick, slideIndex}:any) => {
 					className={classNames(style.block, {[style._isOpen] : isOpen}, {'_isOpened' : isOpen})}
 				>
 					<li
-						id='1'
-						onClick={() => {
-							handleBlockClick(0)
-							checkIndexSlide(1)
-						}} 
-						className={classNames(style.MenuItem, {[style.itemActive] : page == 1})}>
+						className={style.MenuItem}>
+						<AwesomeButton 
+							type='primary' 
+							size='medium'
+							onPress={() => {
+								handleBlockClick(0)
+								checkIndexSlide(1)
+							}}
+						>
 							О Себе
+						</AwesomeButton>
 					</li>
 					<li
-						id='1'
-						onClick={() => {
-							handleBlockClick(1)
-							checkIndexSlide(2)
-						}} 
 						className={classNames(style.MenuItem, {[style.itemActive] : page == 2})}>
+						<AwesomeButton 
+							type='primary' 
+							size='medium'
+							onPress={() => {
+								handleBlockClick(1)
+								checkIndexSlide(2)
+							}}
+						>
 							Навыки
+						</AwesomeButton>
 					</li>
 					<li
-						id='2'
-						onClick={() => {
-							handleBlockClick(2)
-							checkIndexSlide(3)
-						}} 
 						className={classNames(style.MenuItem, {[style.itemActive] : page == 3})}>
+						<AwesomeButton 
+							type='primary' 
+							size='medium'
+							onPress={() => {
+								handleBlockClick(2)
+								checkIndexSlide(3)
+							}}
+						>
 							Проекты
+						</AwesomeButton>
 					</li>
 					<li
-						id='3'
-						onClick={() => {
-							handleBlockClick(3)
-							checkIndexSlide(4)
-						}} 
 						className={classNames(style.MenuItem, {[style.itemActive] : page == 4})}>
+						<AwesomeButton 
+							type='primary' 
+							size='medium'
+							onPress={() => {
+								handleBlockClick(3)
+								checkIndexSlide(4)
+							}}
+						>
 							Контакты
+						</AwesomeButton>
 					</li>
 				</ul>
 				<div
