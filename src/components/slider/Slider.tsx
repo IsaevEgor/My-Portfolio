@@ -7,6 +7,7 @@ import ContactBlock from '../../Blocks/Contact-block/ContactBlock';
 import HelloBlock from '../../Blocks/Hello-block/HelloBlock';
 import ProjectsBlock from '../../Blocks/Project-block/ProjectsBlock';
 import Skillsblock from '../../Blocks/Skills-block/SkillsBlock';
+import { animationStart } from '../../store/mainReducer';
 
 import Menu from '../menu/Menu';
 import "./slider.scss";
@@ -33,8 +34,9 @@ const Slider = () => {
 					organicArrows={true}
 					infinite={false}
 					selected={numSelect}
+					transitionDelay={500}
 					customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}
-					onTransitionRequest={() => dispatch({type: "ANIMATION_START"})}
+					onTransitionRequest={() => dispatch(animationStart())}
 				>
 					<div><HelloBlock/></div>
 					<div><Skillsblock/></div>

@@ -4,6 +4,7 @@ import style from "./menu.module.scss";
 import { CSSTransition } from 'react-transition-group';
 import "./animationMenu.scss";
 import { useDispatch, useSelector } from 'react-redux';
+import { animationStart, animationStop } from '../../store/mainReducer';
   
 const Menu = ({onClick, slideIndex}:any) => {
 	const [isOpen, setisOpen] = useState(false)
@@ -18,9 +19,9 @@ const Menu = ({onClick, slideIndex}:any) => {
 
 	const checkIndexSlide = (buttonIndex:number) => {
 		if (page == buttonIndex) {
-			dispatch({type: "ANIMATION_STOP"})
+			dispatch(animationStop())
 		} else {
-			dispatch({type: "ANIMATION_START"})
+			dispatch(animationStart())
 		}
 	}
 
@@ -32,14 +33,14 @@ const Menu = ({onClick, slideIndex}:any) => {
 			timeout={2000}
 			exit={false}
 			onEntered={() => {
-				dispatch({type: "ANIMATION_STOP"})
+				dispatch(animationStop())
 				setisOpen(false)
 			}}
 		>
 			<div className={style.wrapper}>
 				<ul 
 					ref={nodeRef}
-					className={classNames(style.block, {[style._isOpen] : isOpen})}
+					className={classNames(style.block, {[style._isOpen] : isOpen}, {'_isOpened' : isOpen})}
 				>
 					<li
 						id='1'

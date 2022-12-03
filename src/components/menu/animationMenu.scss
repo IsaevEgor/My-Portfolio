@@ -1,34 +1,35 @@
-.menu-enter {
-	animation-name: animation-menu;
-	animation-duration: 2000;
-	animation-timing-function: ease;
-	animation: animation-menu 2s ease none 1;
-  }
-
-  @keyframes animation-menu {
-	0% {
-		transform: translate(0);
-	} 50% {
-		transform: translate(60%);
-	} 100% {
-		transform: translate(0);
-	}
-  }
-
-  @media (max-width: 768px) {
+@media (min-width: 768px) {
 	.menu-enter {
 		animation-name: animation-menu;
 		animation-duration: 2000;
 		animation-timing-function: ease;
 		animation: animation-menu 2s ease none 1;
-	}
+	  }
+	
 	  @keyframes animation-menu {
+		0% {
+			transform: translate(0);
+		} 50% {
+			transform: translate(60%);
+		} 100% {
+			transform: translate(0);
+		}
+	  }	
+}
+  @media (max-width: 768px) {
+	.menu-enter._isOpened {
+		animation: animation-menu-tablet 2s ease none 1;
+	}
+	.menu-exit._isOpened{
+		opacity: 0;
+	}
+	  @keyframes animation-menu-tablet {
 		0% {
 			transform: translate(0);
 		} 50% {
 			
 		} 100% {
-			transform: translate(250%);
+			transform: translate(-250%);
 		}
 	  }
   }

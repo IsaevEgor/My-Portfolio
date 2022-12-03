@@ -4,6 +4,7 @@ import SocialButton from '../../components/social-button/SocialButton';
 import style from './helloBlocks.module.scss'
 import 'react-awesome-button/dist/styles.css';
 import { useDispatch } from 'react-redux';
+import { activePage_1_Action } from '../../store/pageReducer';
 
 
   
@@ -11,7 +12,7 @@ const HelloBlock = () => {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch({type: "PAGE_1"})
+		dispatch(activePage_1_Action())
 	}, [])
 
 	return (
