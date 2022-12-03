@@ -1,15 +1,13 @@
 @media (min-width: 768px) {
 	.menu-enter {
-		animation-name: animation-menu;
-		animation-duration: 2000;
-		animation-timing-function: ease;
-		animation: animation-menu 2s ease none 1;
+		animation: animation-menu 2.5s ease none 1;
 	  }
 	
 	  @keyframes animation-menu {
 		0% {
 			transform: translate(0);
 		} 50% {
+			opacity: 0;
 			transform: translate(60%);
 		} 100% {
 			transform: translate(0);

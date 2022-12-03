@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { showContent } from '../../store/contentAnimationReducer';
 import { activePage_2_Action } from '../../store/pageReducer';
 import style from "./skills.module.scss";
   

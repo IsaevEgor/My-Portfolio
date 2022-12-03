@@ -9,6 +9,7 @@ import { animationStart, animationStop } from '../../store/mainReducer';
 //(не сбрасывает стили при перезагрузке страници)
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import { hideContent, showContent } from '../../store/contentAnimationReducer';
   
 const Menu = ({onClick, slideIndex}:any) => {
 	const [isOpen, setisOpen] = useState(false)
@@ -34,7 +35,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 			in={animation}
 			nodeRef={nodeRef}
 			classNames="menu"
-			timeout={2000}
+			timeout={2500}
 			exit={false}
 			onEntered={() => {
 				dispatch(animationStop())
@@ -51,9 +52,12 @@ const Menu = ({onClick, slideIndex}:any) => {
 						<AwesomeButton 
 							type='primary' 
 							size='medium'
+							ripple={true}
+							className={classNames({"__active-aws-btn" : page === 1})}
 							onPress={() => {
 								handleBlockClick(0)
 								checkIndexSlide(1)
+								dispatch(hideContent())
 							}}
 						>
 							О Себе
@@ -64,9 +68,13 @@ const Menu = ({onClick, slideIndex}:any) => {
 						<AwesomeButton 
 							type='primary' 
 							size='medium'
+							ripple={true}
+							className={classNames({"__active-aws-btn" : page === 2})}
+							active={page === 2 ? true : false}
 							onPress={() => {
 								handleBlockClick(1)
 								checkIndexSlide(2)
+								dispatch(hideContent())
 							}}
 						>
 							Навыки
@@ -77,9 +85,13 @@ const Menu = ({onClick, slideIndex}:any) => {
 						<AwesomeButton 
 							type='primary' 
 							size='medium'
+							ripple={true}
+							className={classNames({"__active-aws-btn" : page === 3})}
+							active={page === 3 ? true : false}
 							onPress={() => {
 								handleBlockClick(2)
 								checkIndexSlide(3)
+								dispatch(hideContent())
 							}}
 						>
 							Проекты
@@ -90,9 +102,13 @@ const Menu = ({onClick, slideIndex}:any) => {
 						<AwesomeButton 
 							type='primary' 
 							size='medium'
+							ripple={true}
+							className={classNames({"__active-aws-btn" : page === 4})}
+							active={page === 4 ? true : false}
 							onPress={() => {
 								handleBlockClick(3)
 								checkIndexSlide(4)
+								dispatch(hideContent())
 							}}
 						>
 							Контакты

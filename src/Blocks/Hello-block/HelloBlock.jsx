@@ -5,6 +5,7 @@ import style from './helloBlocks.module.scss'
 import 'react-awesome-button/dist/styles.css';
 import { useDispatch } from 'react-redux';
 import { activePage_1_Action } from '../../store/pageReducer';
+import { showContent } from '../../store/contentAnimationReducer';
 
 
   
