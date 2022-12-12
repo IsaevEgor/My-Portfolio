@@ -1,0 +1,18 @@
+.title{
+	position: relative;
+	font-family: "Inter";
+	font-size: 18px;
+	color: aliceblue;
+	padding: 10px 15px;
+	b
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 110%;
+		height: 2px;
+		left: -5%;
+		bottom: -5px;
+		background-color: aliceblue;
+	}
+}

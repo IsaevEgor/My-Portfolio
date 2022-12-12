@@ -1,0 +1,17 @@
+.title{
+	position: relative;
+	font-family: "Inter";
+	font-size: 32px;
+	color: aliceblue;
+	margin: 20px 0 20px 20px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 150%;
+		height: 2px;
+		left: -10%;
+		bottom: -5px;
+		background-color: aliceblue;
+	}
+}

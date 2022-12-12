@@ -60,7 +60,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 								dispatch(hideContent())
 							}}
 						>
-							О Себе
+							Привет!
 						</AwesomeButton>
 					</li>
 					<li
@@ -77,7 +77,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 								dispatch(hideContent())
 							}}
 						>
-							Навыки
+							О Себе
 						</AwesomeButton>
 					</li>
 					<li

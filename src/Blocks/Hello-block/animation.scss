@@ -1,0 +1,28 @@
+.typing-Css_animation-appear {
+	opacity: 0;
+}
+.typing-Css_animation-enter {
+	opacity: 0;
+	transform: translateY(-150%);
+  }
+  .typing-Css_animation-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: 800ms;
+  }
+  .typing-Css_animation-enter-done {
+  }
+
+
+  .typing-Css_animation-exit {
+	transform: translateY(0);
+  }
+  .typing-Css_animation-exit-active {
+	transform: translateY(-150%);
+	opacity: 0;
+	transition: 800ms;
+  }
+  .typing-Css_animation-exit-done {
+	opacity: 0;
+	transform: translateY(-150%);
+  }

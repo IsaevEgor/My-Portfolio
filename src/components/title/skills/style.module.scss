@@ -1,0 +1,25 @@
+.flexBlock{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px 15px;
+	background-color: rgb(78, 78, 78);
+	border-radius: 5px;
+	margin-bottom: 15px;
+
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+.iconSection{
+	width: 25px;
+	height: 25px;
+	padding-right: 5px;
+}
+.textSection{
+	font-family: "Inter";
+	font-size: 16px;
+	line-height: 120%;
+	font-weight: 700;
+	color: aliceblue;
+}

@@ -1,0 +1,28 @@
+.skills_animation-appear {
+	opacity: 0;
+}
+.skills_animation-enter {
+	opacity: 0;
+	transform: translate(150%);
+  }
+  .skills_animation-enter-active {
+	opacity: 1;
+	transform: translate(0);
+	transition: 1000ms;
+  }
+  .skills_animation-enter-done {
+  }
+
+
+  .skills_animation-exit {
+	transform: translate(0);
+  }
+  .skills_animation-exit-active {
+	transform: translate(-150%);
+	opacity: 0;
+	transition: 1000ms;
+  }
+  .skills_animation-exit-done {
+	opacity: 0;
+	transform: translate(-150%);
+  }

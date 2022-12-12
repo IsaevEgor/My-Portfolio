@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ContactBlock from '../../Blocks/Contact-block/ContactBlock';
 import HelloBlock from '../../Blocks/Hello-block/HelloBlock';
 import ProjectsBlock from '../../Blocks/Project-block/ProjectsBlock';
-import Skillsblock from '../../Blocks/Skills-block/SkillsBlock';
+import AboutMeblock from '../../Blocks/AboutMe-block/AboutMeBlock';
 import { hideContent, showContent } from '../../store/contentAnimationReducer';
 import { animationStart } from '../../store/mainReducer';
 
@@ -31,26 +31,24 @@ const Slider = () => {
 	}
 
 	return (
-			<div className='fullPage'>
-				<AwesomeSlider
-					animation="cubeAnimation"
-					cssModule={[CoreStyles, AnimationStyles]}
-					bullets={false}
-					fillParent={true}
-					organicArrows={true}
-					infinite={false}
-					selected={numSelect}
-					transitionDelay={500}
-					customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}
-					onTransitionRequest={() => handleBlockChange()}
-					onTransitionEnd={() => dispatch(showContent())}
-				>
-					<div><HelloBlock/></div>
-					<div><Skillsblock/></div>
-					<div><ProjectsBlock/></div>
-					<div><ContactBlock/></div>
-				  </AwesomeSlider>
-			</div>
+			<AwesomeSlider
+				animation="cubeAnimation"
+				cssModule={[CoreStyles, AnimationStyles]}
+				bullets={false}
+				fillParent={true}
+				organicArrows={true}
+				infinite={false}
+				selected={1}
+				transitionDelay={500}
+				customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}
+				onTransitionRequest={() => handleBlockChange()}
+				onTransitionEnd={() => dispatch(showContent())}
+			>
+				<div><HelloBlock/></div>
+				<div><AboutMeblock/></div>
+				<div><ProjectsBlock/></div>
+				<div><ContactBlock/></div>
+			  </AwesomeSlider>
 		);
 };
 
