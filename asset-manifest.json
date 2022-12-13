@@ -1,13 +1,26 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.0569ae6b.css",
-    "main.js": "/My-Portfolio/static/js/main.88373c74.js",
+    "main.css": "/My-Portfolio/static/css/main.3951d84e.css",
+    "main.js": "/My-Portfolio/static/js/main.faf8b82f.js",
+    "static/media/less.svg": "/My-Portfolio/static/media/less.485c3038578cead0cc6b4da3762455dc.svg",
+    "static/media/sass.svg": "/My-Portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
+    "static/media/react.svg": "/My-Portfolio/static/media/react.9342c38419495e33d129b6e97166cd00.svg",
+    "static/media/JS.svg": "/My-Portfolio/static/media/JS.75e8c074400b1026129806da6e9269ee.svg",
+    "static/media/redux.svg": "/My-Portfolio/static/media/redux.0a4a6ca2be44339bedb69de15f66d243.svg",
+    "static/media/photoshop.svg": "/My-Portfolio/static/media/photoshop.42d1a2d8393824a4d3248efd67ce59d6.svg",
+    "static/media/typescript.svg": "/My-Portfolio/static/media/typescript.8e47b17eec3f85404294a723f1ef5a5d.svg",
+    "static/media/git.svg": "/My-Portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/bootstrap.svg": "/My-Portfolio/static/media/bootstrap.91aad92a015faa64813b5f46723153a8.svg",
+    "static/media/tailwind.svg": "/My-Portfolio/static/media/tailwind.1ff53afb0748cd483d5f0ed13029f287.svg",
     "index.html": "/My-Portfolio/index.html",
-    "main.0569ae6b.css.map": "/My-Portfolio/static/css/main.0569ae6b.css.map",
-    "main.88373c74.js.map": "/My-Portfolio/static/js/main.88373c74.js.map"
+    "static/media/figma.svg": "/My-Portfolio/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
+    "static/media/CSS.svg": "/My-Portfolio/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/HTML.svg": "/My-Portfolio/static/media/HTML.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.3951d84e.css.map": "/My-Portfolio/static/css/main.3951d84e.css.map",
+    "main.faf8b82f.js.map": "/My-Portfolio/static/js/main.faf8b82f.js.map"
   },
   "entrypoints": [
-    "static/css/main.0569ae6b.css",
-    "static/js/main.88373c74.js"
+    "static/css/main.3951d84e.css",
+    "static/js/main.faf8b82f.js"
   ]
 }
