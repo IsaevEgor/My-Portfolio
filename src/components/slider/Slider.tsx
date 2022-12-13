@@ -38,7 +38,7 @@ const Slider = () => {
 				fillParent={true}
 				organicArrows={true}
 				infinite={false}
-				selected={0}
+				selected={numSelect}
 				transitionDelay={500}
 				mobileTouch={false}
 				customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}

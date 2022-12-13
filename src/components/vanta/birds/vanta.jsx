@@ -24,9 +24,7 @@ const VantaBirds = (props) => {
 		if (vantaEffect) vantaEffect.destroy()
 	  }
 	}, [vantaEffect])
-	return <div className={style.vanta} ref={myRef}>
-	  Foreground content goes here
-	</div>
+	return <div className={style.vanta} ref={myRef}></div>
   }
 
   export default VantaBirds;

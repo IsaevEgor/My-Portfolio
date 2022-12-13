@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
 	.menu-enter {
-		animation: animation-menu 2.5s ease none 1;
+		animation: animation-menu 1.8s ease none 1;
 	  }
 	
 	  @keyframes animation-menu {
@@ -16,7 +16,7 @@
 }
   @media (max-width: 768px) {
 	.menu-enter._isOpened {
-		animation: animation-menu-tablet 2s ease none 1;
+		animation: animation-menu-tablet 1.8s ease none 1;
 	}
 	.menu-exit._isOpened{
 		opacity: 0;

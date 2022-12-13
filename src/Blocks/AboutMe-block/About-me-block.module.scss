@@ -16,10 +16,15 @@
 	top: 90px;
 	left: 10%;
 	right: 10%;
-	bottom: 90px;
+	padding-bottom: 30px;
+
+	@media (max-width: 768px) {
+		top: 50px;
+	}
 }
 .skillsBlock{
 	display: flex;
+	gap: 15px;
 	flex-wrap: wrap;
 	width: 100%;
 }

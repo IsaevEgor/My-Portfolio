@@ -35,7 +35,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 			in={animation}
 			nodeRef={nodeRef}
 			classNames="menu"
-			timeout={2500}
+			timeout={1800}
 			exit={false}
 			onEntered={() => {
 				dispatch(animationStop())
