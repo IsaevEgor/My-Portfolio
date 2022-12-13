@@ -3,7 +3,7 @@ import './App.scss';
 import Slider from './components/slider/Slider';
 
 const App = () => {
-
+	
   return (
 	<div>
 		<Slider/>

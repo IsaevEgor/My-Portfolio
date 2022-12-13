@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/vanta/vanta.birds.min.js"  ]
 }

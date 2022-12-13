@@ -10,6 +10,8 @@
 	align-items: center;
 }
 .typedBlock{
+	position: relative;
+	z-index: 2;
 	max-width: 1100px;
 	text-align: center;
 	font-family: 'Inter';

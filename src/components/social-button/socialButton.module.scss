@@ -1,10 +1,9 @@
 .btnBlock{
 	position: absolute;
+	z-index: 2;
 	left: 5%;
 	bottom: 5%;
 
-
-	
 	&>div{
 		width: 500px;
 		display: flex;

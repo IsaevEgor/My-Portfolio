@@ -9,6 +9,7 @@ import { CSSTransition } from "react-transition-group";
 import style from './helloBlocks.module.scss'
 import "./for-typing-text.scss";
 import "./animation.scss";
+import VantaBirds from '../../components/vanta/birds/vanta';
   
 const HelloBlock = () => {
 	const dispatch = useDispatch()
@@ -21,6 +22,7 @@ const HelloBlock = () => {
 
 	return (
 		<div className={style.div}>
+			<VantaBirds/>
 			<CSSTransition
 				in={contentAnimation}
 				nodeRef={nodeRef}
