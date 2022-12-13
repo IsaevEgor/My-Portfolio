@@ -13,7 +13,7 @@ const ProjectsBlock = () => {
 
 	return (
 		<div className={style.block}>
-			<VantaRings/>
+			{/*<VantaRings/>*/}
 		</div>
 	);
 };

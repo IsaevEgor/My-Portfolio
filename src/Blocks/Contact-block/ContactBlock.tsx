@@ -14,7 +14,7 @@ const ContactBlock = () => {
 
 	return (
 		<div>
-			<VantaRings/>
+			{/*<VantaRings/>*/}
 		</div>
 	);
 };

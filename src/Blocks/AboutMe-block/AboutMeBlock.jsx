@@ -24,9 +24,11 @@ import IconGit from "../../assets/Skills-Icon/git.svg";
 import IconHook from "../../assets/Skills-Icon/hook.png";
 import IconRouter from "../../assets/Skills-Icon/router.png";
 import VantaRings from '../../components/vanta/rings/vanta';
+import AboutText from '../../components/text/AboutText';
   
 const AboutMeblock = () => {
 	const dispatch = useDispatch()
+	const Fragment = React.Fragment;
 
 	useEffect(() => {
 		dispatch(activePage_2_Action())
@@ -34,30 +36,16 @@ const AboutMeblock = () => {
 
 	return (
 		<div className={style.wrapper}>
-			<VantaRings/>
+			{/*<VantaRings/>*/}
 			<div className={style.container}>
 				<Title name='О Себе'/>
-				<p className={style.text}>
-					Занимаюсь <span>Front-End</span> разработкой сайтов и интернет-приложений.
-				</p>
-				<p className={style.text}>
-					Имею хорошие знания <span>HTML, CSS, javaScript.</span>
-				</p>
-				<p className={style.text}>
-					В данный момент активно использую и изучаю <span>React </span>в связке с <span>TypeScript.</span>
-				</p>
-				<p className={style.text}>
-					Работаю с системой контроля версий <span>GiT.</span>
-				</p>
-				<p className={style.text}>
-					В проектах использую препроцессоры <span>(SASS, LESS).</span>
-				</p>
-				<p className={style.text}>
-					Постоянно изучаю и внедряю новые технологии в проекты, параллельно усовершенствуя уже полученные знания.
-				</p>
-				<p className={style.text}>
-					Умею работать в команде, <span>целеустремленый, ответственный, коммуникабельный.</span>
-				</p>
+					<AboutText index={1} text={<Fragment>Занимаюсь <span>Front-End</span> разработкой сайтов и интернет-приложений.</Fragment>}/>
+					<AboutText index={2} text={<Fragment>Имею хорошие знания <span>HTML, CSS, javaScript.</span></Fragment>}/>
+					<AboutText index={3} text={<Fragment>В данный момент активно использую и изучаю <span>React </span>в связке с <span>TypeScript.</span></Fragment>}/>
+					<AboutText index={4} text={<Fragment>Работаю с системой контроля версий <span>GiT.</span></Fragment>}/>
+					<AboutText index={5} text={<Fragment>В проектах использую препроцессоры <span>(SASS, LESS).</span></Fragment>}/>
+					<AboutText index={6} text={<Fragment>Постоянно изучаю и внедряю новые технологии в проекты, параллельно усовершенствуя уже полученные знания.</Fragment>}/>
+					<AboutText index={7} text={<Fragment>Умею работать в команде, <span>целеустремленый, ответственный, коммуникабельный.</span></Fragment>}/>
 				<Title name='Навыки'></Title>
 				<div className={style.skillsBlock}>
 					<Skills title='HTML' icon={IconHTML}/>

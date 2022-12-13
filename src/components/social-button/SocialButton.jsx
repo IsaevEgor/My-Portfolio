@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import style from "./socialButton.module.scss";
 import {CSSTransition} from "react-transition-group";
 import "./animation.scss";
@@ -22,6 +22,19 @@ import { useDispatch, useSelector } from 'react-redux';
 const SocialButton = () => {
 	const contentAnimation = useSelector((state) => state.contentAnimation.contentAnimation)
 	const nodeRef = useRef(null)
+	const [sizeButton, setSizeButton] = useState("medium")
+
+	useEffect(() => {
+		const windowWidth = window.innerWidth;
+		const mobile = 500;
+		const smallMobile = 310;
+		if (windowWidth <= mobile) {
+			setSizeButton("small")
+			if (windowWidth <= smallMobile) {
+				setSizeButton("icon")
+			}
+		}
+	}, [])
 
 	return (
 		<div className={style.btnBlock}>
@@ -33,27 +46,33 @@ const SocialButton = () => {
 				unmountOnExit
 			>
 			<div ref={nodeRef}>
-				<AwesomeButton
-					type='messenger'
-					size='medium'
-					href='https://vk.com/id68402157'
-				>
-					<span className={style.textBtn}><AiOutlineUser/><p>VKontakte</p></span>
-				</AwesomeButton>
-				<AwesomeButton
-					type='linkedin'
-					size='medium'
-					href='https://t.me/Egor_i_saev'
-				>
-					<span className={style.textBtn}><FaTelegramPlane/><p>Telegram</p></span>
-				</AwesomeButton>
-				<AwesomeButton
-					type='github'
-					size='medium'
-					href='https://github.com/IsaevEgor'
-				>
-					<span className={style.textBtn}><AiFillGithub/><p>GitHub</p></span>
-				</AwesomeButton>
+				<div className={style.button}>
+					<AwesomeButton
+						type='messenger'
+						size={sizeButton}
+						href='https://vk.com/id68402157'
+					>
+						<span className={style.textBtn}><AiOutlineUser/><p>VKontakte</p></span>
+					</AwesomeButton>
+				</div>
+				<div className={style.button}>
+					<AwesomeButton
+						type='linkedin'
+						size={sizeButton}
+						href='https://t.me/Egor_i_saev'
+					>
+						<span className={style.textBtn}><FaTelegramPlane/><p>Telegram</p></span>
+					</AwesomeButton>
+				</div>
+				<div className={style.button}>
+					<AwesomeButton
+						type='github'
+						size={sizeButton}
+						href='https://github.com/IsaevEgor'
+					>
+						<span className={style.textBtn}><AiFillGithub/><p>GitHub</p></span>
+					</AwesomeButton>
+				</div>
 			</div>
 			</CSSTransition>
 		</div>

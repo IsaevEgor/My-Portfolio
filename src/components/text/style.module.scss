@@ -1,0 +1,25 @@
+.text {
+	position: relative;
+	margin: 0 0 10px;
+	font-family: "Inter";
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 120%;
+	color: rgb(230, 230, 230);
+	transition: 1000ms;
+
+	span{
+		font-weight: 500;
+		color: rgb(253, 253, 253);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 20%;
+		left: -15px;
+		width: 10px;
+		height: 10px;
+		background-color: aliceblue;
+	}
+}

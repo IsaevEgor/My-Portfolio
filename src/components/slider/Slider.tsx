@@ -40,6 +40,7 @@ const Slider = () => {
 				infinite={false}
 				selected={0}
 				transitionDelay={500}
+				mobileTouch={false}
 				customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}
 				onTransitionRequest={() => handleBlockChange()}
 				onTransitionEnd={() => dispatch(showContent())}
