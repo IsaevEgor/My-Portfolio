@@ -1,0 +1,28 @@
+.title_animation-appear {
+	opacity: 0;
+}
+.title_animation-enter {
+	opacity: 0;
+	transform: translateY(-150%);
+  }
+  .title_animation-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: 1000ms;
+  }
+  .title_animation-enter-done {
+  }
+
+
+  .title_animation-exit {
+	transform: translateY(0);
+  }
+  .title_animation-exit-active {
+	transform: translateY(-150%);
+	opacity: 0;
+	transition: 1000ms;
+  }
+  .title_animation-exit-done {
+	opacity: 0;
+	transform: translateY(-150%);
+  }

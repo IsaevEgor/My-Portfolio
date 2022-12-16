@@ -1,5 +1,8 @@
+
 import style from "./style.module.scss";
-import "./animation.scss";
+import "./animationafafa.scss";
+import { useSelector } from 'react-redux';
+import { useRef } from 'react';
   
 interface IProps {
 	text: string,

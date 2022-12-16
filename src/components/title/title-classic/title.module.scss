@@ -2,8 +2,10 @@
 	position: relative;
 	font-family: "Inter";
 	font-size: 32px;
+	text-transform: uppercase;
 	color: aliceblue;
 	margin: 20px 0 20px 20px;
+	max-width: 250px;
 
 	&::after {
 		content: "";
