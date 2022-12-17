@@ -23,6 +23,7 @@ import IconBootstrap from "../../assets/Skills-Icon/bootstrap.svg";
 import IconGit from "../../assets/Skills-Icon/git.svg";
 import IconHook from "../../assets/Skills-Icon/hook.png";
 import IconRouter from "../../assets/Skills-Icon/router.png";
+
 import VantaRings from '../../components/vanta/rings/vanta';
 import AboutText from '../../components/text/AboutText';
   

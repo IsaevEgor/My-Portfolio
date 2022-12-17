@@ -10,9 +10,14 @@ interface IProps {
 	title: string,
 	icon?: any
 }
+interface iState {
+	contentAnimation: {
+		contentAnimation: boolean
+	}
+}
   
 const Skills = ({title, icon}:IProps) => {
-	const contentAnimation = useSelector((state:any) => state.contentAnimation.contentAnimation)
+	const contentAnimation = useSelector((state:iState) => state.contentAnimation.contentAnimation)
 	const nodeRef = useRef(null)
 	const [hover, setHover] = useState(Boolean)
 
@@ -26,16 +31,20 @@ const Skills = ({title, icon}:IProps) => {
 		>
 			<li 
 				ref={nodeRef} 
-				className={classNames(style.flexBlock, {['animate__animated animate__headShake'] : hover})}
-				onMouseEnter={() => setHover(true)}
-				onMouseLeave={() => setHover(false)}
+				className={classNames(style.flexBlock, {["animate__animated animate__bounceIn"]: hover})}
+				onMouseEnter={() => {
+					setHover(true)
+					setTimeout(() => {
+						setHover(false)
+					}, 500);
+				}}
 			>
 				{ icon 
 				? <img src={icon} alt="" className={style.iconSection}/>
 				: <></>
 			}
 				<p 
-					className={classNames(style.textSection, )}
+					className={style.textSection}
 				>
 					{title}
 				</p>

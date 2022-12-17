@@ -5,11 +5,16 @@ import VantaRings from '../../components/vanta/rings/vanta';
 import { activePage_3_Action } from '../../store/pageReducer';
 import style from "./project-block.module.scss";
 
-import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney_1.jpg"
-import classNames from 'classnames';
+import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney_1.jpg";
+import HappyImg_1 from "../../assets/work/Happy/HappyProject.png";
+import Infinizai_1 from "../../assets/work/Infinizai/Infinizal.png";
+
+import Skills from '../../components/title/skills/Skills';
+import Project from '../../components/project-block/Project';
+import { fireMoneyArr, happyProjectArr, infinizaiProjectArr } from '../../SkillsArray';
+
 const ProjectsBlock = () => {
 	const dispatch = useDispatch()
-	const [hoverImg, setHoverImg] = useState(Boolean)
 
 	useEffect(() => {
 		dispatch(activePage_3_Action())
@@ -19,21 +24,11 @@ const ProjectsBlock = () => {
 		<div className={style.wrapper}>
 			{/*<VantaRings/>*/}
 			<Title name='Мои работы'/>
-			<p>Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.</p>
+			<p className={style.textProject}>Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.</p>
 			<div className={style.projectList}>
-				<div className={style.projectItem}>
-					<div 
-						className={classNames(style.imageBlock, {[style.hoverImg] : hoverImg})}
-						onMouseEnter={() => setHoverImg(true)}
-						onMouseLeave={() => setHoverImg(false)}
-					>
-						<img 
-							src={FireMoneyImg_1} 
-							alt="" 
-							className={style.img}
-						/>
-					</div>
-				</div>
+				<Project skillsArr={fireMoneyArr} imgProject={FireMoneyImg_1}/>
+				<Project skillsArr={happyProjectArr} imgProject={HappyImg_1}/>
+				<Project skillsArr={infinizaiProjectArr} imgProject={Infinizai_1}/>
 			</div>
 		</div>
 	);

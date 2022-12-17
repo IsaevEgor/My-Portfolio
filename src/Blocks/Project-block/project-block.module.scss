@@ -1,54 +1,22 @@
 .wrapper {
 	position: absolute;
 	top: 10%;
-	left: 10%;
-	right: 10%;
+	left: 20%;
+	right: 20%;
 	bottom: 10%;
 }
+.textProject{
+	font-family: "Inter";
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 120%;
+	color: aliceblue;
 
+	margin-bottom: 50px;
+}
 .projectList{
 	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
 	width: 100%;
-}
-.projectItem{
-	flex: 0 1 50%;
-}
-.imageBlock{
-	position: relative;
-	width: 100%;
-	padding-bottom: 58.25%;
-	overflow: hidden;
-
-	&::after{
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: -100%;
-		left: 0;
-		background-color: rgba(0, 0, 0, 0.671);
-		transition: 0.3s;
-	}
-}
-.img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-
-}
-.hoverImg{
-	position: relative;
-
-	&::after{
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0%;
-		left: 0;
-		background-color: rgba(0, 0, 0, 0.671);
-	}
 }
