@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
-import Skills from '../../components/title/skills/Skills';
+import Skills from '../../components/skills/Skills';
 import Title from '../../components/title/title-classic/Title';
 import { activePage_2_Action } from '../../store/pageReducer';
 import style from "./About-me-block.module.scss";
@@ -39,26 +39,18 @@ const AboutMeblock = () => {
 
 	return (
 		<div className={style.wrapper}>
-			{/*<VantaRings/>*/}
+			<VantaRings/>
 			<div className={style.container}>
 				<Title name='О Себе'/>
-				<CSSTransition
-					in={contentAnimation}
-					nodeRef={nodeRef}
-					timeout={1000}
-					classNames="text_animation"
-					unMountExit
-				>
 					<div ref={nodeRef}>
-					<AboutText text={<Fragment>Занимаюсь <span>Front-End</span> разработкой сайтов и интернет-приложений.</Fragment>}/>
-					<AboutText text={<Fragment>Имею хорошие знания <span>HTML, CSS, javaScript.</span></Fragment>}/>
-					<AboutText text={<Fragment>В данный момент активно использую и изучаю <span>React </span>в связке с <span>TypeScript.</span></Fragment>}/>
-					<AboutText text={<Fragment>Работаю с системой контроля версий <span>GiT.</span></Fragment>}/>
-					<AboutText text={<Fragment>В проектах использую препроцессоры <span>(SASS, LESS).</span></Fragment>}/>
-					<AboutText text={<Fragment>Постоянно изучаю и внедряю новые технологии в проекты, параллельно усовершенствуя уже полученные знания.</Fragment>}/>
-					<AboutText text={<Fragment>Умею работать в команде, <span>целеустремленый, ответственный, коммуникабельный.</span></Fragment>}/>
+						<AboutText text={<Fragment>Занимаюсь <span>Front-End</span> разработкой сайтов и интернет-приложений.</Fragment>}/>
+						<AboutText text={<Fragment>Имею хорошие знания <span>HTML, CSS, javaScript.</span></Fragment>}/>
+						<AboutText text={<Fragment>В данный момент активно использую и изучаю <span>React </span>в связке с <span>TypeScript.</span></Fragment>}/>
+						<AboutText text={<Fragment>Работаю с системой контроля версий <span>GiT.</span></Fragment>}/>
+						<AboutText text={<Fragment>В проектах использую препроцессоры <span>(SASS, LESS).</span></Fragment>}/>
+						<AboutText text={<Fragment>Постоянно изучаю и внедряю новые технологии в проекты, параллельно усовершенствуя уже полученные знания.</Fragment>}/>
+						<AboutText text={<Fragment>Умею работать в команде, <span>целеустремленый, ответственный, коммуникабельный.</span></Fragment>}/>
 					</div>
-				</CSSTransition>
 				<Title name='Навыки'></Title>
 				<div className={style.skillsBlock}>
 					<Skills title='HTML' icon={IconHTML}/>

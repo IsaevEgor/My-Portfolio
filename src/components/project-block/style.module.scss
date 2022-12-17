@@ -1,11 +1,16 @@
 .projectItem{
 	flex: 0 1 48%;
+
+	@media (max-width: 768px) {
+		flex: 1 1 100%;
+	}
 }
 .imageBlock{
 	position: relative;
 	width: 100%;
 	padding-bottom: 58.25%;
 	overflow: hidden;
+	border-radius: 10px;
 
 	&::after{
 		content: "";
@@ -54,9 +59,19 @@
 	align-content: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 5px;
 
 	transition: 0.5s;
+}
+.textBtn{
+	display: flex;
+	width: 150px;
+	justify-content: space-around;
+	align-items: center;
+}
+.icon {
+	font-size: 30px;
+
 }
 .hoverBlock{
 	top: 0;

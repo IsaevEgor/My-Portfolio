@@ -9,9 +9,10 @@ import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney_1.jpg";
 import HappyImg_1 from "../../assets/work/Happy/HappyProject.png";
 import Infinizai_1 from "../../assets/work/Infinizai/Infinizal.png";
 
-import Skills from '../../components/title/skills/Skills';
+import Skills from '../../components/skills/Skills';
 import Project from '../../components/project-block/Project';
 import { fireMoneyArr, happyProjectArr, infinizaiProjectArr } from '../../SkillsArray';
+import Tag from '../../components/tags/Tag';
 
 const ProjectsBlock = () => {
 	const dispatch = useDispatch()
@@ -22,13 +23,29 @@ const ProjectsBlock = () => {
 
 	return (
 		<div className={style.wrapper}>
-			{/*<VantaRings/>*/}
-			<Title name='Мои работы'/>
-			<p className={style.textProject}>Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.</p>
-			<div className={style.projectList}>
-				<Project skillsArr={fireMoneyArr} imgProject={FireMoneyImg_1}/>
-				<Project skillsArr={happyProjectArr} imgProject={HappyImg_1}/>
-				<Project skillsArr={infinizaiProjectArr} imgProject={Infinizai_1}/>
+			<VantaRings/>
+			<div className={style.container}>
+				<Title name='Мои работы'/>
+				<p className={style.textProject}>
+					Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.
+				</p>
+				<div className={style.projectList}>
+					<Project 
+						skillsArr={fireMoneyArr} 
+						imgProject={FireMoneyImg_1}
+						href={"https://github.com/IsaevEgor/Fire-Money"}
+					/>
+					<Project 
+						skillsArr={happyProjectArr} 
+						imgProject={HappyImg_1}
+						href={"https://github.com/IsaevEgor/H-app-y-Project"}
+					/>
+					<Project 
+						skillsArr={infinizaiProjectArr} 
+						imgProject={Infinizai_1}
+						href={"https://github.com/IsaevEgor/Infinizal"}
+					/>
+				</div>
 			</div>
 		</div>
 	);

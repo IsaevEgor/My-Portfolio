@@ -22,7 +22,7 @@ const HelloBlock = () => {
 
 	return (
 		<div className={style.div}>
-			{/*<VantaBirds/>*/}
+			<VantaBirds/>
 			<CSSTransition
 				in={contentAnimation}
 				nodeRef={nodeRef}

@@ -12,7 +12,10 @@
 .typedBlock{
 	position: relative;
 	z-index: 2;
+	padding: 50px 0;
+	width: 100%;
 	max-width: 1100px;
+	min-height: 300px;
 	margin: 0 20px;
 
 	text-align: center;
@@ -20,7 +23,11 @@
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 150%;
-	color: rgb(211, 211, 211);
+	color: rgb(255, 255, 255);
+
+	background-color: rgba(0, 0, 0, 0.466);
+
+	border-radius: 50px;
 
 	@media (max-width: 768px) {
 		font-size: 26px;

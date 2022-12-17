@@ -6,7 +6,6 @@
 	font-weight: 300;
 	line-height: 120%;
 	color: rgb(230, 230, 230);
-	transition: 1000ms;
 
 	span{
 		font-weight: 500;
@@ -20,7 +19,7 @@
 		left: -15px;
 		width: 10px;
 		height: 10px;
-		background-color: aliceblue;
+		background-color: rgb(0, 101, 189);
 	}
 
 	@media (max-width: 768px) {

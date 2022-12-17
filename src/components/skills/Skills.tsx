@@ -31,12 +31,14 @@ const Skills = ({title, icon}:IProps) => {
 		>
 			<li 
 				ref={nodeRef} 
-				className={classNames(style.flexBlock, {["animate__animated animate__bounceIn"]: hover})}
+				className={classNames(style.flexBlock, {
+					["animate__animated animate__headShake"]: hover
+				})}
 				onMouseEnter={() => {
 					setHover(true)
 					setTimeout(() => {
 						setHover(false)
-					}, 500);
+					}, 900);
 				}}
 			>
 				{ icon 
