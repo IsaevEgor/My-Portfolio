@@ -1,6 +1,8 @@
+@import "../../variables/variables";
+
 .title{
 	position: relative;
-	font-family: "Inter";
+	font-family: $font-text;
 	font-size: 18px;
 	color: aliceblue;
 	padding: 10px 15px;

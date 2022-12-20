@@ -5,10 +5,9 @@ import Skills from '../skills/Skills';
 import Tag from '../tags/Tag';
 import { AwesomeButton } from 'react-awesome-button';
 import { AiFillGithub } from 'react-icons/ai';
-//import "react-awesome-button/dist/styles.css";
-//import 'react-awesome-button/src/styles/themes/theme-rickiest';
+import headerImg from "../../assets/work/panel.png";
 
-const Project = ({skillsArr, imgProject, href}) => {
+const Project = ({skillsArr, imgProject_1, imgProject_2, href, projectName}) => {
 	const [hoverImg, setHoverImg] = useState(Boolean)
 	return (
 		<div className={style.projectItem}>
@@ -17,10 +16,19 @@ const Project = ({skillsArr, imgProject, href}) => {
 				onMouseEnter={() => setHoverImg(true)}
 				onMouseLeave={() => setHoverImg(false)}
 			>
+				<div className={style.imgHeader}>
+					 <span className={style.imageName}>{projectName}</span>
+					<img src={headerImg} alt="panel" className={style.imgPanel}/>
+				</div>
 				<img 
-					src={imgProject} 
-					alt="" 
+					src={imgProject_1} 
+					alt="project" 
 					className={style.img}
+				/>
+				<img 
+					src={imgProject_2} 
+					alt="project" 
+					className={classNames(style.imgSecond, {[style.imgSecondActive] : hoverImg})}
 				/>
 				<div className={classNames(style.skillsProjectBlock, {[style.hoverBlock] : hoverImg})}>
 					{skillsArr.map((item) => (

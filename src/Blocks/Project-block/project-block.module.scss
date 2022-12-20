@@ -1,3 +1,5 @@
+@import "../../variables/variables";
+
 .wrapper {
 	position: absolute;
 	top: 0;
@@ -14,7 +16,7 @@
 	bottom: 10%;
 }
 .textProject{
-	font-family: "Inter";
+	font-family: $font-text;
 	font-weight: 300;
 	font-size: 22px;
 	line-height: 120%;

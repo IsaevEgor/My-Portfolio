@@ -1,7 +1,9 @@
+@import "../../variables/variables";
+
 .text {
 	position: relative;
 	margin: 0 0 10px;
-	font-family: "Inter";
+	font-family: $font-text;
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 120%;

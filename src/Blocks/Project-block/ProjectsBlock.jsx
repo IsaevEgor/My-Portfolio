@@ -5,12 +5,12 @@ import VantaRings from '../../components/vanta/rings/vanta';
 import { activePage_3_Action } from '../../store/pageReducer';
 import style from "./project-block.module.scss";
 
-import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney_1.jpg";
-import HappyImg_1 from "../../assets/work/Happy/HappyProject.png";
+import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney.png";
+import HappyImg_1 from "../../assets/work/Happy/Happy.png";
 import Infinizai_1 from "../../assets/work/Infinizai/Infinizal.png";
 
 import Skills from '../../components/skills/Skills';
-import Project from '../../components/project-block/Project';
+import Project from '../../components/project/Project';
 import { fireMoneyArr, happyProjectArr, infinizaiProjectArr } from '../../SkillsArray';
 import Tag from '../../components/tags/Tag';
 
@@ -30,19 +30,25 @@ const ProjectsBlock = () => {
 					Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.
 				</p>
 				<div className={style.projectList}>
-					<Project 
+					<Project
+						projectName="Fire Money"
 						skillsArr={fireMoneyArr} 
-						imgProject={FireMoneyImg_1}
+						imgProject_1={FireMoneyImg_1}
+						imgProject_2={HappyImg_1}
 						href={"https://github.com/IsaevEgor/Fire-Money"}
 					/>
-					<Project 
+					<Project
+						projectName="H(app)y"
 						skillsArr={happyProjectArr} 
-						imgProject={HappyImg_1}
+						imgProject_1={HappyImg_1}
+						imgProject_2={HappyImg_1}
 						href={"https://github.com/IsaevEgor/H-app-y-Project"}
 					/>
-					<Project 
+					<Project
+						projectName="Infinizai"
 						skillsArr={infinizaiProjectArr} 
-						imgProject={Infinizai_1}
+						imgProject_1={Infinizai_1}
+						imgProject_2={HappyImg_1}
 						href={"https://github.com/IsaevEgor/Infinizal"}
 					/>
 				</div>
