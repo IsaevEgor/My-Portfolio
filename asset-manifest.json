@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.7ae6132d.css",
-    "main.js": "/My-Portfolio/static/js/main.1ea9c977.js",
-    "static/media/Infinizal.png": "/My-Portfolio/static/media/Infinizal.49e1f8af6284866ebc97.png",
-    "static/media/HappyProject.png": "/My-Portfolio/static/media/HappyProject.85d5f52602683a960320.png",
-    "static/media/FireMoney_1.jpg": "/My-Portfolio/static/media/FireMoney_1.629a1d4763a75ee6e77d.jpg",
+    "main.css": "/My-Portfolio/static/css/main.a4afe35c.css",
+    "main.js": "/My-Portfolio/static/js/main.5c7bcf37.js",
+    "static/media/FireMoney.png": "/My-Portfolio/static/media/FireMoney.830dcbfd1cfab08649da.png",
+    "static/media/Infinizai_2.png": "/My-Portfolio/static/media/Infinizai_2.c909845921bd1772fbfa.png",
+    "static/media/Infinizal.png": "/My-Portfolio/static/media/Infinizal.3e50872727f51bb51eab.png",
+    "static/media/FireMoney_2.png": "/My-Portfolio/static/media/FireMoney_2.091f73b488f7087ef6a7.png",
+    "static/media/Happy.png": "/My-Portfolio/static/media/Happy.d98cbdd92fe302a159e8.png",
+    "static/media/Happy_2.png": "/My-Portfolio/static/media/Happy_2.423f1c300b094d7d1df8.png",
     "static/media/less.svg": "/My-Portfolio/static/media/less.485c3038578cead0cc6b4da3762455dc.svg",
     "static/media/sass.svg": "/My-Portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/react.svg": "/My-Portfolio/static/media/react.9342c38419495e33d129b6e97166cd00.svg",
@@ -19,11 +22,11 @@
     "static/media/figma.svg": "/My-Portfolio/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/CSS.svg": "/My-Portfolio/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/HTML.svg": "/My-Portfolio/static/media/HTML.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.7ae6132d.css.map": "/My-Portfolio/static/css/main.7ae6132d.css.map",
-    "main.1ea9c977.js.map": "/My-Portfolio/static/js/main.1ea9c977.js.map"
+    "main.a4afe35c.css.map": "/My-Portfolio/static/css/main.a4afe35c.css.map",
+    "main.5c7bcf37.js.map": "/My-Portfolio/static/js/main.5c7bcf37.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ae6132d.css",
-    "static/js/main.1ea9c977.js"
+    "static/css/main.a4afe35c.css",
+    "static/js/main.5c7bcf37.js"
   ]
 }
