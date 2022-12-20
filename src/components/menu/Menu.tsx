@@ -10,12 +10,19 @@ import { animationStart, animationStop } from '../../store/mainReducer';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { hideContent, showContent } from '../../store/contentAnimationReducer';
-  
+
+interface IStatePlay {
+	play: {
+		startPlay: boolean;
+	}
+}
+
 const Menu = ({onClick, slideIndex}:any) => {
 	const [isOpen, setisOpen] = useState(false)
 	const nodeRef = useRef(null)
 	const dispatch = useDispatch()
 	const animation = useSelector((state:any) => state.mainAnimation.animation)
+	const play = useSelector((state:IStatePlay) => state.play.startPlay);
 	const page = useSelector((state:any) => state.page.page)
 
 	const handleBlockClick = (num:number) => {
@@ -27,6 +34,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 			dispatch(animationStop())
 		} else {
 			dispatch(animationStart())
+			dispatch(hideContent())
 		}
 	}
 
@@ -45,7 +53,11 @@ const Menu = ({onClick, slideIndex}:any) => {
 			<div className={style.wrapper}>
 				<ul 
 					ref={nodeRef}
-					className={classNames(style.block, {[style._isOpen] : isOpen}, {'_isOpened' : isOpen})}
+					className={classNames(style.block, 
+						{[style._isOpen] : isOpen},
+						{'_isOpened' : isOpen},
+						{[style.goTop] : play}
+						)}
 				>
 					<li
 						className={style.MenuItem}>
@@ -57,7 +69,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 							onPress={() => {
 								handleBlockClick(0)
 								checkIndexSlide(1)
-								dispatch(hideContent())
+								
 							}}
 						>
 							Привет!
@@ -74,7 +86,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 							onPress={() => {
 								handleBlockClick(1)
 								checkIndexSlide(2)
-								dispatch(hideContent())
+								
 							}}
 						>
 							О Себе
@@ -91,7 +103,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 							onPress={() => {
 								handleBlockClick(2)
 								checkIndexSlide(3)
-								dispatch(hideContent())
+								
 							}}
 						>
 							Проекты
@@ -108,7 +120,7 @@ const Menu = ({onClick, slideIndex}:any) => {
 							onPress={() => {
 								handleBlockClick(3)
 								checkIndexSlide(4)
-								dispatch(hideContent())
+							
 							}}
 						>
 							Контакты

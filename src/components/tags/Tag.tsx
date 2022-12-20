@@ -1,15 +1,16 @@
+import classNames from 'classnames';
 import React from 'react';
 import style from "./style.module.scss";
   
 	interface IProp {
-		title: string
+		title: string,
+		hover: boolean
 	}
 
-const Tag = ({title}: IProp) => {
-	console.log(title);
+const Tag = ({title, hover}: IProp) => {
 	
 	return (
-		<div className={style.block}>
+		<div className={classNames(style.block, {["animate__animated animate__bounceInUp"] : hover})}>
 			{title}
 		</div>
 	);

@@ -14,6 +14,15 @@
 	left: 20%;
 	right: 20%;
 	bottom: 10%;
+
+	@media (max-width: 768px) {
+		left: 15%;
+		right: 15%;
+	}
+	@media (max-width: 520px) {
+		left: 5%;
+		right: 5%;
+	}
 }
 .textProject{
 	font-family: $font-text;
@@ -23,6 +32,16 @@
 	color: aliceblue;
 
 	margin-bottom: 50px;
+
+	a{
+		color: $special-color;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline wavy;
+		}
+	}
 }
 .projectList{
 	display: flex;

@@ -32,7 +32,7 @@ const Project = ({skillsArr, imgProject_1, imgProject_2, href, projectName}) => 
 				/>
 				<div className={classNames(style.skillsProjectBlock, {[style.hoverBlock] : hoverImg})}>
 					{skillsArr.map((item) => (
-						<Tag title={item.name} icon={item.icon}/>
+						<Tag hover={hoverImg} title={item.name} icon={item.icon}/>
 					))}
 				</div>
 			</div>

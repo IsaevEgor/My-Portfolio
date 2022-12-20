@@ -26,8 +26,6 @@ const Slider = () => {
 	const handleBlockChange = () => {
 		dispatch(animationStart())
 		dispatch(hideContent())
-		console.log("Анимация контента при выходе из блока равна", contentAnimation);
-		
 	}
 
 	return (
@@ -38,7 +36,7 @@ const Slider = () => {
 				fillParent={true}
 				organicArrows={true}
 				infinite={false}
-				selected={2}
+				selected={numSelect}
 				transitionDelay={500}
 				mobileTouch={false}
 				customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}

@@ -12,11 +12,12 @@
 	&::after {
 		content: "";
 		position: absolute;
-		width: 150%;
-		height: 2px;
+		width: 120%;
+		height: 5px;
 		left: -10%;
-		bottom: -5px;
-		background-color: aliceblue;
+		bottom: -8px;
+		background-color: $special-color;
+		border-radius: 5px;
 	}
 
 	@media (max-width: 768px) {

@@ -15,7 +15,7 @@ import "react-awesome-button/dist/styles.css";
 import 'react-awesome-button/src/styles/themes/theme-rickiest';
 
 // для изменения дефолтных стилей кнопки (идет последним)
-import "./styleBtn.scss";
+import "../../Ui/style-for-awesome_Btn/styleBtn.scss";
 import { useDispatch, useSelector } from 'react-redux';
 
 

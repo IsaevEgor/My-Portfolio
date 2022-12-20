@@ -10,6 +10,7 @@ import style from './helloBlocks.module.scss'
 import "./for-typing-text.scss";
 import "./animation.scss";
 import VantaBirds from '../../components/vanta/birds/vanta';
+import PlayBtn from '../../components/play-button/PlayBtn';
   
 const HelloBlock = () => {
 	const dispatch = useDispatch()
@@ -39,6 +40,7 @@ const HelloBlock = () => {
 					/>
 				</div>
 			</CSSTransition>
+			<PlayBtn/>
 			<SocialButton/>
 		</div>
 	);

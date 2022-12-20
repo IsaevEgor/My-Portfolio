@@ -6,8 +6,11 @@ import { activePage_3_Action } from '../../store/pageReducer';
 import style from "./project-block.module.scss";
 
 import FireMoneyImg_1 from "../../assets/work/FireMoney/FireMoney.png";
+import FireMoneyImg_2 from "../../assets/work/FireMoney/FireMoney_2.png";
 import HappyImg_1 from "../../assets/work/Happy/Happy.png";
+import HappyImg_2 from "../../assets/work/Happy/Happy_2.png";
 import Infinizai_1 from "../../assets/work/Infinizai/Infinizal.png";
+import Infinizai_2 from "../../assets/work/Infinizai/Infinizai_2.png";
 
 import Skills from '../../components/skills/Skills';
 import Project from '../../components/project/Project';
@@ -27,28 +30,28 @@ const ProjectsBlock = () => {
 			<div className={style.container}>
 				<Title name='Мои работы'/>
 				<p className={style.textProject}>
-					Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта в гит хабе.
+					Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта на <a href='https://github.com/IsaevEgor'>Git-Hub.</a>
 				</p>
 				<div className={style.projectList}>
 					<Project
 						projectName="Fire Money"
 						skillsArr={fireMoneyArr} 
 						imgProject_1={FireMoneyImg_1}
-						imgProject_2={HappyImg_1}
+						imgProject_2={FireMoneyImg_2}
 						href={"https://github.com/IsaevEgor/Fire-Money"}
 					/>
 					<Project
 						projectName="H(app)y"
 						skillsArr={happyProjectArr} 
 						imgProject_1={HappyImg_1}
-						imgProject_2={HappyImg_1}
+						imgProject_2={HappyImg_2}
 						href={"https://github.com/IsaevEgor/H-app-y-Project"}
 					/>
 					<Project
 						projectName="Infinizai"
 						skillsArr={infinizaiProjectArr} 
 						imgProject_1={Infinizai_1}
-						imgProject_2={HappyImg_1}
+						imgProject_2={Infinizai_2}
 						href={"https://github.com/IsaevEgor/Infinizal"}
 					/>
 				</div>

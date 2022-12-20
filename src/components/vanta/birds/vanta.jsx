@@ -17,7 +17,8 @@ const VantaBirds = (props) => {
 		  scale: 1.00,
 		  scaleMobile: 1.00,
 		  birdSize: 1,
-		  colorMode: "variance"
+		  colorMode: "variance",
+		  backgroundColor: "#000025"
 		}))
 	  }
 	  return () => {
