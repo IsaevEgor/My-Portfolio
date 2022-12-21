@@ -28,9 +28,10 @@
 	line-height: 150%;
 	color: rgb(255, 255, 255);
 
-	background-color: rgba(22, 12, 48, 0.918);
-
 	border-radius: 50px;
+	background: #000025ef;
+	box-shadow:  20px 20px 35px #000018,
+				 -20px -20px 35px #000032;
 
 	@media (max-width: 768px) {
 		font-size: 26px;

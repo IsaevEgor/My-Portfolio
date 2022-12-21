@@ -6,7 +6,6 @@ import "react-awesome-button/dist/styles.css";
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 import { hideContent, showContent } from '../../store/contentAnimationReducer';
-import { animationStart, animationStop } from '../../store/mainReducer';
 import { startPlay, stopPlay } from '../../store/playReducer';
   
 	interface IStateMainAnimation {

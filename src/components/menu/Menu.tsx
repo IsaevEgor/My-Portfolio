@@ -10,6 +10,7 @@ import { animationStart, animationStop } from '../../store/mainReducer';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { hideContent, showContent } from '../../store/contentAnimationReducer';
+import { activePage_1_Action, activePage_2_Action, activePage_3_Action, activePage_4_Action } from '../../store/pageReducer';
 
 interface IStatePlay {
 	play: {
@@ -17,17 +18,13 @@ interface IStatePlay {
 	}
 }
 
-const Menu = ({onClick, slideIndex}:any) => {
+const Menu = ({slideIndex}:any) => {
 	const [isOpen, setisOpen] = useState(false)
 	const nodeRef = useRef(null)
 	const dispatch = useDispatch()
 	const animation = useSelector((state:any) => state.mainAnimation.animation)
 	const play = useSelector((state:IStatePlay) => state.play.startPlay);
 	const page = useSelector((state:any) => state.page.page)
-
-	const handleBlockClick = (num:number) => {
-		onClick(num)
-	}
 
 	const checkIndexSlide = (buttonIndex:number) => {
 		if (page == buttonIndex) {
@@ -67,9 +64,8 @@ const Menu = ({onClick, slideIndex}:any) => {
 							ripple={true}
 							className={classNames({"__active-aws-btn" : page === 1})}
 							onPress={() => {
-								handleBlockClick(0)
 								checkIndexSlide(1)
-								
+								dispatch(activePage_1_Action())
 							}}
 						>
 							Привет!
@@ -84,9 +80,8 @@ const Menu = ({onClick, slideIndex}:any) => {
 							className={classNames({"__active-aws-btn" : page === 2})}
 							active={page === 2 ? true : false}
 							onPress={() => {
-								handleBlockClick(1)
 								checkIndexSlide(2)
-								
+								dispatch(activePage_2_Action())
 							}}
 						>
 							О Себе
@@ -101,9 +96,8 @@ const Menu = ({onClick, slideIndex}:any) => {
 							className={classNames({"__active-aws-btn" : page === 3})}
 							active={page === 3 ? true : false}
 							onPress={() => {
-								handleBlockClick(2)
 								checkIndexSlide(3)
-								
+								dispatch(activePage_3_Action())
 							}}
 						>
 							Проекты
@@ -118,9 +112,8 @@ const Menu = ({onClick, slideIndex}:any) => {
 							className={classNames({"__active-aws-btn" : page === 4})}
 							active={page === 4 ? true : false}
 							onPress={() => {
-								handleBlockClick(3)
 								checkIndexSlide(4)
-							
+								dispatch(activePage_4_Action())
 							}}
 						>
 							Контакты

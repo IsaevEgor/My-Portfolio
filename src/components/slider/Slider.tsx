@@ -18,10 +18,7 @@ const Slider = () => {
 	const dispatch = useDispatch()
 	const animation = useSelector((state:any) => state.mainAnimation.animation)
 	const contentAnimation = useSelector(((state:any) => state.contentAnimation.contentAnimation))
-
-	const hadleBlockClick = (numberBlock:any) => {
-		setNumSelect(numberBlock)
-	}
+	const page = useSelector(((state:any) => state.page.page))
 
 	const handleBlockChange = () => {
 		dispatch(animationStart())
@@ -36,10 +33,10 @@ const Slider = () => {
 				fillParent={true}
 				organicArrows={true}
 				infinite={false}
-				selected={numSelect}
+				selected={page-1}
 				transitionDelay={500}
 				mobileTouch={false}
-				customContent={<Menu slideIndex={numSelect} onClick={hadleBlockClick}/>}
+				customContent={<Menu slideIndex={numSelect}/>}
 				onTransitionRequest={() => handleBlockChange()}
 				onTransitionEnd={() => dispatch(showContent())}
 			>
