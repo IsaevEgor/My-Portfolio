@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.f8f93d0c.css",
-    "main.js": "/My-Portfolio/static/js/main.66150757.js",
+    "main.css": "/My-Portfolio/static/css/main.f72c9c95.css",
+    "main.js": "/My-Portfolio/static/js/main.b2803a66.js",
     "static/media/FireMoney.png": "/My-Portfolio/static/media/FireMoney.830dcbfd1cfab08649da.png",
     "static/media/Infinizai_2.png": "/My-Portfolio/static/media/Infinizai_2.c909845921bd1772fbfa.png",
     "static/media/Infinizal.png": "/My-Portfolio/static/media/Infinizal.3e50872727f51bb51eab.png",
@@ -11,10 +11,13 @@
     "static/media/less.svg": "/My-Portfolio/static/media/less.485c3038578cead0cc6b4da3762455dc.svg",
     "static/media/sass.svg": "/My-Portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/react.svg": "/My-Portfolio/static/media/react.9342c38419495e33d129b6e97166cd00.svg",
+    "static/media/whatsapp.svg": "/My-Portfolio/static/media/whatsapp.7dc3f3267bee9b39fd8d08466208e48a.svg",
     "static/media/JS.svg": "/My-Portfolio/static/media/JS.0c457b2f77a92c23591e1d2e61a4105e.svg",
     "static/media/redux.svg": "/My-Portfolio/static/media/redux.0a4a6ca2be44339bedb69de15f66d243.svg",
     "static/media/photoshop.svg": "/My-Portfolio/static/media/photoshop.42d1a2d8393824a4d3248efd67ce59d6.svg",
     "static/media/typescript.svg": "/My-Portfolio/static/media/typescript.2a6aea2066ebb8aa94f555138ea3ccc0.svg",
+    "static/media/gmail.svg": "/My-Portfolio/static/media/gmail.2c70fa80e7595c831171e23d3d580539.svg",
+    "static/media/telegram.svg": "/My-Portfolio/static/media/telegram.b0589b5e724dd92cc132ddb6a0e049d9.svg",
     "static/media/git.svg": "/My-Portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/bootstrap.svg": "/My-Portfolio/static/media/bootstrap.91aad92a015faa64813b5f46723153a8.svg",
     "static/media/tailwind.svg": "/My-Portfolio/static/media/tailwind.1ff53afb0748cd483d5f0ed13029f287.svg",
@@ -22,11 +25,11 @@
     "static/media/figma.svg": "/My-Portfolio/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/CSS.svg": "/My-Portfolio/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/HTML.svg": "/My-Portfolio/static/media/HTML.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.f8f93d0c.css.map": "/My-Portfolio/static/css/main.f8f93d0c.css.map",
-    "main.66150757.js.map": "/My-Portfolio/static/js/main.66150757.js.map"
+    "main.f72c9c95.css.map": "/My-Portfolio/static/css/main.f72c9c95.css.map",
+    "main.b2803a66.js.map": "/My-Portfolio/static/js/main.b2803a66.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8f93d0c.css",
-    "static/js/main.66150757.js"
+    "static/css/main.f72c9c95.css",
+    "static/js/main.b2803a66.js"
   ]
 }
