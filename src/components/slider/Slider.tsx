@@ -33,7 +33,7 @@ const Slider = () => {
 				fillParent={true}
 				organicArrows={true}
 				infinite={false}
-				selected={page-1}
+				selected={3} //page-1
 				transitionDelay={500}
 				mobileTouch={false}
 				customContent={<Menu slideIndex={numSelect}/>}

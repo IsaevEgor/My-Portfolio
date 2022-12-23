@@ -18,10 +18,12 @@
 		content: '';
 		position: absolute;
 		top: 20%;
-		left: -15px;
+		left: -20px;
+		transform: translateY(50%);
 		width: 10px;
 		height: 10px;
 		background-color: $special-color;
+		border-radius: 2px;
 	}
 
 	@media (max-width: 768px) {
