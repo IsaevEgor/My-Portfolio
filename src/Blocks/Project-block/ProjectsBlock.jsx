@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Title from '../../components/title/title-classic/Title';
 import VantaRings from '../../components/vanta/rings/vanta';
 import { activePage_3_Action } from '../../store/pageReducer';
@@ -16,9 +16,11 @@ import Skills from '../../components/skills/Skills';
 import Project from '../../components/project/Project';
 import { fireMoneyArr, happyProjectArr, infinizaiProjectArr } from '../../SkillsArray';
 import Tag from '../../components/tags/Tag';
+import classNames from 'classnames';
 
 const ProjectsBlock = () => {
 	const dispatch = useDispatch()
+	const contentAnimation = useSelector(state => state.contentAnimation.contentAnimation)
 
 	useEffect(() => {
 		dispatch(activePage_3_Action())
@@ -29,7 +31,10 @@ const ProjectsBlock = () => {
 			<VantaRings/>
 			<div className={style.container}>
 				<Title name='Мои работы'/>
-				<p className={style.textProject}>
+				<p className={classNames(style.textProject, {
+					["animate__animated animate__lightSpeedInRight"] : contentAnimation,
+					["animate__animated animate__lightSpeedOutLeft"] : !contentAnimation
+				})}>
 					Здесь вы можете ознакомиться с моими работами и перейти на страницу проекта на <a href='https://github.com/IsaevEgor'>Git-Hub.</a>
 				</p>
 				<div className={style.projectList}>

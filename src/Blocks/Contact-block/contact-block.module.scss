@@ -31,6 +31,9 @@
 	flex-direction: column;
 	flex: 1 1 auto;
 
+	--animate-delay: 0.2s;
+	--animate-duration: 0.3s;
+
 	:not(:last-child) {
 		margin-bottom: 15px;
 	}
@@ -57,3 +60,4 @@
 .textColor{
 	color: $special-color;
 }
+

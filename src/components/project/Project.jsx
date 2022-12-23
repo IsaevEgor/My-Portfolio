@@ -6,11 +6,16 @@ import Tag from '../tags/Tag';
 import { AwesomeButton } from 'react-awesome-button';
 import { AiFillGithub } from 'react-icons/ai';
 import headerImg from "../../assets/work/panel.png";
+import { useSelector } from 'react-redux';
 
 const Project = ({skillsArr, imgProject_1, imgProject_2, href, projectName}) => {
-	const [hoverImg, setHoverImg] = useState(Boolean)
+	const [hoverImg, setHoverImg] = useState(Boolean);
+	const contentAnimation = useSelector(state => state.contentAnimation.contentAnimation)
 	return (
-		<div className={style.projectItem}>
+		<div className={classNames(style.projectItem, {
+			["animate__animated animate__fadeIn"] : contentAnimation,
+			["animate__animated animate__fadeOut"] : !contentAnimation
+		})}>
 			<div 
 				className={classNames(style.imageBlock, {[style.hoverImg] : hoverImg})}
 				onMouseEnter={() => setHoverImg(true)}
