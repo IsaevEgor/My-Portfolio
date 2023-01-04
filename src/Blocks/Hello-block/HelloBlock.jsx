@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactTyped from 'react-typed';
 import SocialButton from '../../components/social-button/SocialButton';
 import 'react-awesome-button/dist/styles.css';
@@ -16,6 +16,7 @@ const HelloBlock = () => {
 	const dispatch = useDispatch()
 	const contentAnimation = useSelector((state => state.contentAnimation.contentAnimation))
 	const nodeRef = useRef(null)
+	const [printed, setPrinted] = useState(false)
 
 	useEffect(() => {
 		dispatch(activePage_1_Action())
@@ -32,12 +33,16 @@ const HelloBlock = () => {
 				unmountOnExit
 			>
 				<div ref={nodeRef} className={style.typedBlock}>
-					<ReactTyped
-						strings={
-							["Привет!<br/> Меня зовут Егор Исаев! Я - Front-end разработчик.<br/>Разрабатываю и усовершенствую пользовательские интерфейсы и приложения.<br>Делаю мир интернета немного красивее и удобнее ;)</br>"]
-						}
-						typeSpeed={30}
-					/>
+					{printed 
+					? <div>Привет!<br/> Меня зовут Егор Исаев! Я - Front-end разработчик.<br/>Разрабатываю и усовершенствую пользовательские интерфейсы и приложения.<br/>Делаю мир интернета немного красивее и удобнее ;)</div>
+					: <ReactTyped
+					strings={
+						["Привет!<br/> Меня зовут Егор Исаев! Я - Front-end разработчик.<br/>Разрабатываю и усовершенствую пользовательские интерфейсы и приложения.<br>Делаю мир интернета немного красивее и удобнее ;)</br>"]
+					}
+					typeSpeed={30}
+					onComplete={() => setPrinted(true)}
+				/>
+				}
 				</div>
 			</CSSTransition>
 			<PlayBtn/>
